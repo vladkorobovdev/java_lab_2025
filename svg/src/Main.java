@@ -6,8 +6,13 @@ public class Main {
 
         System.out.println(p.toSvg());
 
-        Point p2 = p.translated(2.0, 3.5);
+        Point p2 = p.translated(4.0, 3.0);
         System.out.println(p);
         System.out.println(p2);
+
+        Segment s = new Segment();
+        s.p1 = p;
+        s.p2 = p2;
+        System.out.println(s.length());
     }
 }
