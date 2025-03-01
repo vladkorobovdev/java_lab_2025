@@ -15,4 +15,17 @@ public class Segment {
                 ", p2.y = " + p2.y +
                 '}';
     }
+
+    public static Segment longest_segment(Segment[] segments) {
+        double max = segments[0].length();
+        int index = 0;
+        for (int i = 0; i < segments.length; i++) {
+            if (segments[i].length() > max) {
+                max = segments[i].length();
+                index = i;
+            }
+        }
+
+        return segments[index];
+    }
 }
