@@ -54,18 +54,30 @@ public class Main {
     }
 
     public static void scene() {
-        Polygon p1 = new Polygon(new Point[]{new Point(2.0, 6.5)});
-        Polygon p2 = new Polygon(new Point[]{new Point(3.0, 5.5)});
-        Polygon p3 = new Polygon(new Point[]{new Point(4.0, 8.5)});
+        Polygon p1 = new Polygon(new Point[]{
+                new Point(2.0, 6.5),
+                new Point(2.0, 6.5),
+                new Point(2.0, 6.5)
+        });
+        Polygon p2 = new Polygon(new Point[]{
+                new Point(3.0, 5.5),
+                new Point(2.0, 6.5),
+                new Point(2.0, 6.5)
+        });
+        Polygon p3 = new Polygon(new Point[]{
+                new Point(4.0, 8.5),
+                new Point(10.0, 20.0),
+                new Point(25.0, 45.0)
+        });
 
         SvgScene scene = new SvgScene();
         scene.addPolygon(p1);
         scene.addPolygon(p2);
         scene.addPolygon(p3);
         System.out.println(scene);
-
-        Polygon p4 = new Polygon(new Point[]{new Point(2.0, 10.5)});
-        scene.addPolygon(p4);
-        System.out.println(scene);
+        System.out.println(scene.toSvg());
+//        Polygon p4 = new Polygon(new Point[]{new Point(2.0, 10.5)});
+//        scene.addPolygon(p4);
+//        System.out.println(scene);
     }
 }
