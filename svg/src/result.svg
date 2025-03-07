@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <polygon points="2.0,6.5 2.0,6.5 2.0,6.5 " style="fill:lime;stroke:purple;stroke-width:3" />
+    <polygon points="3.0,5.5 2.0,6.5 2.0,6.5 " style="fill:lime;stroke:purple;stroke-width:3" />
+    <polygon points="4.0,8.5 10.0,20.0 25.0,45.0 " style="fill:lime;stroke:purple;stroke-width:3" />
+</svg>
