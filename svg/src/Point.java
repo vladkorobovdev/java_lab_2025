@@ -13,6 +13,11 @@ public class Point {
         this.y = y;
     }
 
+    public Point(Point oldP) { // constructor for deep copy
+        this.x = oldP.x;
+        this.y = oldP.y;
+    }
+
     public double getX() {
         return x;
     }
