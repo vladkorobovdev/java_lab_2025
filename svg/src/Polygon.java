@@ -2,10 +2,26 @@ import java.util.Arrays;
 import java.util.Locale;
 
 public class Polygon {
-    private final Point[] points;
+    private Point[] points;
+
+//    public Polygon(Point[] points) {
+//        this.points = points;
+//    }
+
+//    public Polygon(Point[] points) {
+//        int length = points.length;
+//        this.points = new Point[length];
+//        for (int i = 0; i < length; i++) {
+//            this.points[i] = points[i];
+//        }
+//    }
 
     public Polygon(Point[] points) {
-        this.points = points;
+        int length = points.length;
+        this.points = new Point[length];
+        for (int i = 0; i < length; i++) {
+            this.points[i] = new Point(points[i]);
+        }
     }
 
     @Override
