@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Point p = new Point();
-        p.x = 5.0;
-        p.y = 7.5;
+//        Point p = new Point();
+//        p.x = 5.0;
+//        p.y = 7.5;
+
+        Point p = new Point(5.0, 7.5);
 
         System.out.println(p.toSvg());
 
@@ -11,8 +13,8 @@ public class Main {
         System.out.println(p2);
 
         Point p3 = new Point();
-        p3.x = 6.0;
-        p3.y = 4.0;
+        p3.setX(6.0);
+        p3.setY(4.0);
 
         Segment s = new Segment();
         s.p1 = p;
